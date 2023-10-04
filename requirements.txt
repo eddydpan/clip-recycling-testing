@@ -1,0 +1,5 @@
+pandas
+pillow
+open-clip-torch
+torch
+urllib3==1.26.15
