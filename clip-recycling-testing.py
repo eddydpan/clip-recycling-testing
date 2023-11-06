@@ -12,7 +12,7 @@ data = {'expected' : [], 'output' : [], 'output disposal' : [], 'probability' : 
 
 material_list = []
 material_dict = {}
-with open("new_material_list.txt", "r") as f1:
+with open("./data/new_material_list.txt", "r") as f1:
     lines = f1.readlines()
     for line in lines: 
         material = line.split(" [")[0]
@@ -27,7 +27,7 @@ input_files = ['plastic.txt', 'cardboard_paper.txt', 'metal.txt', 'electronics.t
 input_names = ['plastic', 'cardboard_paper', 'metal', 'electronics', 'organic_matter', 'wood', 'glass', 'textiles', 'other']
 #####################################################################################################################
 for i in range(len(input_files)):
-    with open(input_files[i], "r") as f2: 
+    with open("./data/" + input_files[i], "r") as f2: 
         lines = f2.readlines()
         other_list = []
         for line in lines:
@@ -73,4 +73,5 @@ for i in range(len(input_files)):
 
         f2.close()
     df = pd.DataFrame(data, index= other_list)
-    df.to_csv(str(input_names[i]) + '.csv')
+    df.to_csv("./results/" + str(input_names[i]) + '.csv')
+
