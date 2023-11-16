@@ -50,7 +50,7 @@ for i in range(len(input_files)):
                     image_features /= image_features.norm(dim=-1, keepdim=True)
                     text_features /= text_features.norm(dim=-1, keepdim=True)
 
-                    text_probs = (image_features @ text_features.T).softmax(dim=-1)
+                    text_probs = (100*image_features @ text_features.T).softmax(dim=-1)
 
                     probabilities = []
                     counter = 0
