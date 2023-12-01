@@ -4,5 +4,5 @@ Code Repository for the paper **How to Recycle: General Vision-Language Model wi
 This paper has been accepted to *NeurIPS 2023 Workshop on Tackling Climate Change with Machine Learning: Blending New and Existing Knowledge Systems.* 
 
 To reproduce the results of the paper, we recommend using Python 3.10.9 and downloading the required libraries from the requirements.txt file. 
-The data used in this study can be found in the `./data` folder. Images can also be found on Harvard Dataverse.
+The data used in this study can be found in the `./data` folder. Images can also be found on [Harvard Dataverse](https://doi.org/10.7910/DVN/JTHULH).
 The result files can be found in the `./results/ ` folder. 
